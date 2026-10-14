@@ -33,6 +33,9 @@ yarn-error.*
 # local env files
 .env*.local
 
+# notas locales (no subir a GitHub)
+MEJORAS.md
+
 # typescript
 *.tsbuildinfo
 

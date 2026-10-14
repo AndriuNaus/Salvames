@@ -1,0 +1,9 @@
+Carpeta para capturas de pantalla referenciadas en el README.
+
+Nombres sugeridos:
+- 01-gastos.png
+- 02-agregar.png
+- 03-ingresos.png
+- 04-resumen.png
+
+Descomentar las lineas correspondientes en README.md cuando existan.

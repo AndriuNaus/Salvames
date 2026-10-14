@@ -1,24 +1,59 @@
 {
   "expo": {
-    "name": "mi-app-gastos",
-    "slug": "mi-app-gastos",
+    "name": "Salva el Mes",
+    "slug": "salvames",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
+    "scheme": "mi-app-gastos",
+    "userInterfaceStyle": "automatic",
     "ios": {
       "supportsTablet": true
     },
     "android": {
+      "package": "com.miappgastos.app",
+      "versionCode": 1,
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
+        "backgroundColor": "#FFFFFF",
         "foregroundImage": "./assets/android-icon-foreground.png",
         "backgroundImage": "./assets/android-icon-background.png",
         "monochromeImage": "./assets/android-icon-monochrome.png"
-      }
+      },
+      "permissions": [
+        "android.permission.USE_BIOMETRIC",
+        "android.permission.USE_FINGERPRINT"
+      ]
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "experiments": {
+      "typedRoutes": true
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/notification-icon.png",
+          "color": "#2563EB"
+        }
+      ],
+      [
+        "expo-local-authentication",
+        {
+          "faceIdPermission": "Permitir el desbloqueo de tu app de gastos con reconocimiento facial."
+        }
+      ],
+      "expo-font",
+      "expo-sharing"
+    ],
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "0d557658-f392-4550-b740-7c81d902506b"
+      }
+    },
+    "owner": "salvames-team"
   }
 }
